@@ -1,0 +1,12 @@
+<h2>Add New Post</h2> #добавить пост
+<p>
+<form action="/new" method="POST" role="form"> #action - куда будут отправл данные (по url страницы (new)), method="POST" - метод отправки данных
+
+
+	#имя которое присвоется textatea, к которому можно обратиться с помощью символа 
+	<textarea name="content" class="form-control" rows="6" placeholder="Type post text here"></textarea>#placeholder-будет написанно в окне для заполнения (фраза исчезнет когда начнём вводить текст),name присваивается в params как content-переменная в app.rb
+	</br> #отодвигаем кнопку от окошка заполнения
+ 	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</p>
+#выше указанное связываем в app.rb
